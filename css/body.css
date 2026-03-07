@@ -1,0 +1,9 @@
+body {
+    background-color: var(--morado-profundo);
+    background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(108, 63, 197, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(30, 58, 95, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at 60% 80%, rgba(155, 89, 245, 0.08) 0%, transparent 50%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}

@@ -1,0 +1,315 @@
+.tienda-container {
+    padding: 60px 5%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Cinzel', serif;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--blanco);
+    letter-spacing: 3px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--morado-brillante), transparent);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background: rgba(26, 16, 48, 0.7);
+    border: 1px solid rgba(108, 63, 197, 0.25);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(108, 63, 197, 0.05), transparent);
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(155, 89, 245, 0.5);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(108, 63, 197, 0.2);
+}
+
+.card img {
+    width: 200px;
+    min-width: 200px;
+    height: 240px;
+    object-fit: contain;
+    background: rgba(13, 10, 26, 0.8);
+    padding: 15px;
+    filter: grayscale(1);
+    transition: all 0.4s ease;
+}
+
+.card:hover img {
+    filter: grayscale(0);
+}
+
+.card-info {
+    flex: 1;
+    padding: 25px 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-badge {
+    display: inline-block;
+    background: rgba(108, 63, 197, 0.25);
+    border: 1px solid rgba(155, 89, 245, 0.4);
+    color: var(--violeta-glow);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    font-family: 'Cinzel', serif;
+    display: inline-block;
+}
+
+.card-info h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: var(--blanco);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.card-info p {
+    color: var(--gris-texto);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.card-info .price {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--violeta-glow);
+    font-weight: 700;
+    font-family: 'Cinzel', serif;
+}
+
+.btn-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--morado-acento), var(--morado-brillante));
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 11px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(108, 63, 197, 0.3);
+}
+
+.btn-buy:hover {
+    background: linear-gradient(135deg, var(--morado-brillante), var(--violeta-glow));
+    box-shadow: 0 6px 25px rgba(155, 89, 245, 0.5);
+    transform: translateY(-2px);
+}
+
+.card-search {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 34px;
+    height: 34px;
+    background: rgba(108, 63, 197, 0.4);
+    border: 1px solid rgba(155, 89, 245, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+    font-size: 13px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover .card-search {
+    opacity: 1;
+}
+
+.card-extras {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(108, 63, 197, 0.2);
+}
+
+.btn-wishlist {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    color: var(--gris-texto);
+    border: 1px solid rgba(108, 63, 197, 0.3);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-wishlist i {
+    color: rgba(239, 68, 68, 0.5);
+    transition: color 0.3s ease;
+}
+
+.btn-wishlist:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: var(--blanco);
+}
+
+.btn-wishlist:hover i {
+    color: #ef4444;
+}
+
+.btn-wishlist.active {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: rgba(239, 68, 68, 0.5);
+    color: #ef4444;
+}
+
+.btn-wishlist.active i {
+    color: #ef4444;
+}
+
+.stock-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stock-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    color: var(--gris-texto);
+    font-family: 'Raleway', sans-serif;
+}
+
+.stock-track {
+    width: 100%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.stock-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.6s ease;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stars {
+    color: var(--dorado-magico);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.review-count {
+    font-size: 0.72rem;
+    color: var(--gris-texto);
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width: 1100px) {
+    .card img {
+        width: 160px;
+        min-width: 160px;
+        height: 200px;
+    }
+
+    .card-info h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        min-width: unset;
+        height: 220px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .tienda-container {
+        padding: 40px 4%;
+    }
+}

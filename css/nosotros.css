@@ -1,0 +1,194 @@
+.nosotros-container {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+    color: var(--blanco);
+}
+
+.title-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(155, 89, 245, 0.6), transparent);
+    margin-bottom: 70px;
+}
+
+.empresa-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.empresa-img {
+    flex: 1;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(108, 63, 197, 0.3);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        0 0 40px rgba(108, 63, 197, 0.15);
+}
+
+.empresa-img img {
+    width: 100%;
+    display: block;
+    filter: brightness(0.85) saturate(0.7);
+    transition: filter 0.4s ease;
+}
+
+.empresa-img:hover img {
+    filter: brightness(0.95) saturate(1);
+}
+
+.empresa-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(108, 63, 197, 0.1), transparent 60%);
+    pointer-events: none;
+}
+
+.empresa-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-start;
+}
+
+.label-empresa {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    color: var(--violeta-glow);
+    text-transform: uppercase;
+}
+
+.brand-branding {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-branding i {
+    color: var(--dorado-magico);
+    font-size: 1.4rem;
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.5));
+}
+
+.brand-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blanco);
+    text-shadow: 0 0 20px rgba(155, 89, 245, 0.4);
+}
+
+.empresa-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.empresa-text p {
+    color: var(--gris-texto);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.empresa-socials {
+    display: flex;
+    gap: 18px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.empresa-socials a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(108, 63, 197, 0.15);
+    border: 1px solid rgba(108, 63, 197, 0.4);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.empresa-socials img {
+    width: 22px;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.empresa-socials a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(155, 89, 245, 0.6);
+    border-color: var(--morado-brillante);
+}
+
+.empresa-socials a:hover img {
+    filter: grayscale(0%);
+}
+
+.empresa-socials a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(155, 89, 245, 0.35);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: 1;
+}
+
+.empresa-socials a:hover::after {
+    width: 140px;
+    height: 140px;
+}
+
+@media (max-width: 900px) {
+    .empresa-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .empresa-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .nosotros-container {
+        padding: 50px 5%;
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+        letter-spacing: 5px;
+    }
+
+    .brand-title {
+        font-size: 1.5rem;
+    }
+
+    .title-divider {
+        margin-bottom: 40px;
+    }
+}

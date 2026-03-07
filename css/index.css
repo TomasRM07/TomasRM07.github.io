@@ -1,0 +1,302 @@
+@keyframes pulseGlow {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.1); opacity: 1; }
+}
+
+@keyframes slider {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-200%); }
+}
+
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+    margin: 30px 4%;
+    border: 1px solid rgba(155, 89, 245, 0.35);
+    border-radius: 20px;
+    background: rgba(13, 10, 26, 0.8);
+    box-shadow:
+        0 0 60px rgba(108, 63, 197, 0.2),
+        inset 0 0 80px rgba(108, 63, 197, 0.05);
+}
+
+.slides {
+    display: flex;
+    animation: slider 15s linear infinite;
+}
+
+.slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 40px;
+    min-height: 480px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(155, 89, 245, 0.25) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 390px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 30px rgba(155, 89, 245, 0.5));
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.03) rotate(-1deg);
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    color: var(--blanco);
+    text-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+}
+
+.hero-content p {
+    color: var(--gris-texto);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    max-width: 420px;
+    line-height: 1.7;
+}
+
+.btn-cart {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--morado-acento), var(--morado-brillante));
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(108, 63, 197, 0.4);
+}
+
+.btn-cart:hover {
+    background: linear-gradient(135deg, var(--morado-brillante), var(--violeta-glow));
+    box-shadow: 0 8px 30px rgba(155, 89, 245, 0.6);
+    transform: translateY(-2px);
+}
+
+.slider-arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    background: rgba(108, 63, 197, 0.6);
+    border: 1px solid rgba(155, 89, 245, 0.6);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: all 0.3s ease;
+}
+
+.arrow:hover {
+    background: rgba(155, 89, 245, 0.7);
+    box-shadow: 0 0 15px rgba(155, 89, 245, 0.5);
+}
+
+.info-block {
+    padding: 80px 5%;
+    background: rgba(26, 16, 48, 0.4);
+    border-top: 1px solid rgba(108, 63, 197, 0.15);
+    border-bottom: 1px solid rgba(108, 63, 197, 0.15);
+}
+
+.info-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.info-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.info-text h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--blanco);
+    line-height: 1.2;
+}
+
+.info-text p {
+    color: var(--gris-texto);
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--violeta-glow);
+    border: 1px solid rgba(155, 89, 245, 0.6);
+    padding: 12px 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: rgba(108, 63, 197, 0.2);
+    border-color: var(--morado-brillante);
+    box-shadow: 0 0 20px rgba(155, 89, 245, 0.3);
+    color: var(--blanco);
+}
+
+.info-images {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+
+.info-images img {
+    width: 140px;
+    height: 195px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(108, 63, 197, 0.3);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(108, 63, 197, 0.15);
+    transition: all 0.4s ease;
+    filter: brightness(0.85) saturate(0.8);
+}
+
+.info-images img:hover {
+    transform: translateY(-8px) scale(1.03);
+    filter: brightness(1) saturate(1.2);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(155, 89, 245, 0.35);
+    border-color: rgba(155, 89, 245, 0.6);
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 40px 6%;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 280px;
+    }
+
+    .hero-image::before {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-slider {
+        margin: 15px 3%;
+        border-radius: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-cart {
+        padding: 12px 24px;
+        font-size: 0.82rem;
+    }
+
+    .info-block {
+        padding: 50px 5%;
+    }
+
+    .info-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .info-images img {
+        width: 110px;
+        height: 155px;
+    }
+}
