@@ -1,216 +1,381 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>CarDDex | Tienda</title>
-    <link rel="icon" href="../images/Logo.png" type="image/png">
-    <link rel="stylesheet" href="../css/genericos.css">
-    <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/tienda.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <link rel="icon" href="../images/Logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/genericos.css" />
+    <link rel="stylesheet" href="../css/body.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/tienda.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo-container">
-            <img src="../images/Logo.png" alt="Logo CarDDex" class="logo-img">
-            <span class="logo-text">CarDDex</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="tienda.html" class="active">TIENDA</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <div class="auth-btns">
-            <button class="btn-login"><i class="fa-solid fa-user"></i> Login</button>
-            <button class="btn-register"><i class="fa-solid fa-user-plus"></i> Register</button>
-        </div>
+      <div class="logo-container">
+        <img src="../images/Logo.png" alt="Logo CarDDex" class="logo-img" />
+        <span class="logo-text">CarDDex</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="tienda.html" class="active">TIENDA</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+          <li><a href="reglas.html" class="active">LOCKE</a></li>
+        </ul>
+      </nav>
+      <div class="auth-btns">
+        <button class="btn-login">
+          <i class="fa-solid fa-user"></i> Login
+        </button>
+        <button class="btn-register">
+          <i class="fa-solid fa-user-plus"></i> Register
+        </button>
+      </div>
     </header>
 
     <main class="tienda-container">
-        <h2 class="section-title"><i class="fas fa-gem"></i> Nuestra Colección Legendaria</h2>
+      <h2 class="section-title">
+        <i class="fas fa-gem"></i> Nuestra Colección Legendaria
+      </h2>
 
-        <div class="products-grid">
-
-            <div class="card">
-                <span class="card-search"><i class="fas fa-search"></i></span>
-                <img src="../images/main/Pikachu_Illustrator.png" alt="Pikachu Illustrator">
-                <div class="card-info">
-                    <span class="card-badge">Legendaria</span>
-                    <h4>Pikachu Illustrator</h4>
-                    <p>El "Santo Grial". Solo para los coleccionistas más exigentes del mundo.</p>
-                    <div class="price-row"><span class="price">$5,250,000</span></div>
-                    <button class="btn-buy"><i class="fas fa-cart-plus"></i> ADD TO CART</button>
-                    <div class="card-extras">
-                        <button class="btn-wishlist"><i class="fas fa-heart"></i> Wishlist</button>
-                        <div class="stock-bar"><div class="stock-label"><span>Stock</span><span>1/3</span></div><div class="stock-track"><div class="stock-fill" style="width: 33%; background: #ef4444;"></div></div></div>
-                        <div class="reviews"><span class="stars">★★★★★</span><span class="review-count">(412 reseñas)</span></div>
-                    </div>
+      <div class="products-grid">
+        <div class="card">
+          <span class="card-search"><i class="fas fa-search"></i></span>
+          <img
+            src="../images/main/Pikachu_Illustrator.png"
+            alt="Pikachu Illustrator" />
+          <div class="card-info">
+            <span class="card-badge">Legendaria</span>
+            <h4>Pikachu Illustrator</h4>
+            <p>
+              El "Santo Grial". Solo para los coleccionistas más exigentes del
+              mundo.
+            </p>
+            <div class="price-row"><span class="price">$5,250,000</span></div>
+            <button class="btn-buy">
+              <i class="fas fa-cart-plus"></i> ADD TO CART
+            </button>
+            <div class="card-extras">
+              <button class="btn-wishlist">
+                <i class="fas fa-heart"></i> Wishlist
+              </button>
+              <div class="stock-bar">
+                <div class="stock-label">
+                  <span>Stock</span><span>1/3</span>
                 </div>
-            </div>
-
-            <div class="card">
-                <span class="card-search"><i class="fas fa-search"></i></span>
-                <img src="../images/main/Umbreon_Vmax_Alt.jpg" alt="Moonbreon">
-                <div class="card-info">
-                    <span class="card-badge">Alt Art</span>
-                    <h4>Umbreon VMAX Alt Art</h4>
-                    <p>La joya de Cielos Evolutivos. Arte alternativo nocturno.</p>
-                    <div class="price-row"><span class="price">$850</span></div>
-                    <button class="btn-buy"><i class="fas fa-cart-plus"></i> ADD TO CART</button>
-                    <div class="card-extras">
-                        <button class="btn-wishlist"><i class="fas fa-heart"></i> Wishlist</button>
-                        <div class="stock-bar"><div class="stock-label"><span>Stock</span><span>4/10</span></div><div class="stock-track"><div class="stock-fill" style="width: 40%; background: #f59e0b;"></div></div></div>
-                        <div class="reviews"><span class="stars">★★★★★</span><span class="review-count">(289 reseñas)</span></div>
-                    </div>
+                <div class="stock-track">
+                  <div
+                    class="stock-fill"
+                    style="width: 33%; background: #ef4444"></div>
                 </div>
+              </div>
+              <div class="reviews">
+                <span class="stars">★★★★★</span
+                ><span class="review-count">(412 reseñas)</span>
+              </div>
             </div>
-
-            <div class="card">
-                <span class="card-search"><i class="fas fa-search"></i></span>
-                <img src="../images/main/Charizard_(Base_Set_TCG).png" alt="Charizard">
-                <div class="card-info">
-                    <span class="card-badge">1st Edition</span>
-                    <h4>Charizard 1st Edition</h4>
-                    <p>Set Base Shadowless. El icono absoluto de 1999.</p>
-                    <div class="price-row"><span class="price">$350,000</span></div>
-                    <button class="btn-buy"><i class="fas fa-cart-plus"></i> ADD TO CART</button>
-                    <div class="card-extras">
-                        <button class="btn-wishlist"><i class="fas fa-heart"></i> Wishlist</button>
-                        <div class="stock-bar"><div class="stock-label"><span>Stock</span><span>2/5</span></div><div class="stock-track"><div class="stock-fill" style="width: 40%; background: #f59e0b;"></div></div></div>
-                        <div class="reviews"><span class="stars">★★★★★</span><span class="review-count">(1.2k reseñas)</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <span class="card-search"><i class="fas fa-search"></i></span>
-                <img src="../images/main/Pikachu_Culon.jpg" alt="Pikachu EX">
-                <div class="card-info">
-                    <span class="card-badge">Special EX</span>
-                    <h4>Pikachu EX Special</h4>
-                    <p>Edición especial con arte expandido y gran detalle.</p>
-                    <div class="price-row"><span class="price">$450</span></div>
-                    <button class="btn-buy"><i class="fas fa-cart-plus"></i> ADD TO CART</button>
-                    <div class="card-extras">
-                        <button class="btn-wishlist"><i class="fas fa-heart"></i> Wishlist</button>
-                        <div class="stock-bar"><div class="stock-label"><span>Stock</span><span>8/10</span></div><div class="stock-track"><div class="stock-fill" style="width: 80%; background: #22c55e;"></div></div></div>
-                        <div class="reviews"><span class="stars">★★★★☆</span><span class="review-count">(87 reseñas)</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <span class="card-search"><i class="fas fa-search"></i></span>
-                <img src="../images/tienda/Gardevoir SH_EX.jpg" alt="Gardevoir SH_EX">
-                <div class="card-info">
-                    <span class="card-badge">Shiny EX</span>
-                    <h4>Gardevoir Shiny EX</h4>
-                    <p>Edición especial variocolor con arte radiante y bordes plateados de la era moderna.</p>
-                    <div class="price-row"><span class="price">$150</span></div>
-                    <button class="btn-buy"><i class="fas fa-cart-plus"></i> ADD TO CART</button>
-                    <div class="card-extras">
-                        <button class="btn-wishlist"><i class="fas fa-heart"></i> Wishlist</button>
-                        <div class="stock-bar"><div class="stock-label"><span>Stock</span><span>7/10</span></div><div class="stock-track"><div class="stock-fill" style="width: 70%; background: #22c55e;"></div></div></div>
-                        <div class="reviews"><span class="stars">★★★★★</span><span class="review-count">(154 reseñas)</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <span class="card-search"><i class="fas fa-search"></i></span>
-                <img src="../images/tienda/Latios&Latias_EX.png" alt="Latios & Latias EX">
-                <div class="card-info">
-                    <span class="card-badge">GX Alt Art</span>
-                    <h4>Latios & Latias GX Alt Art</h4>
-                    <p>El icónico diseño en forma de corazón, una de las piezas más buscadas de Sol y Luna.</p>
-                    <div class="price-row"><span class="price">$1,200</span></div>
-                    <button class="btn-buy"><i class="fas fa-cart-plus"></i> ADD TO CART</button>
-                    <div class="card-extras">
-                        <button class="btn-wishlist"><i class="fas fa-heart"></i> Wishlist</button>
-                        <div class="stock-bar"><div class="stock-label"><span>Stock</span><span>3/10</span></div><div class="stock-track"><div class="stock-fill" style="width: 30%; background: #ef4444;"></div></div></div>
-                        <div class="reviews"><span class="stars">★★★★★</span><span class="review-count">(201 reseñas)</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <span class="card-search"><i class="fas fa-search"></i></span>
-                <img src="../images/tienda/Salamance_VMAX.png" alt="Salamance VMAX">
-                <div class="card-info">
-                    <span class="card-badge">Rainbow Rare</span>
-                    <h4>Salamence VMAX Rainbow</h4>
-                    <p>Rareza secreta con acabado arcoíris que muestra al dragón de Hoenn en su máximo esplendor.</p>
-                    <div class="price-row"><span class="price">$85</span></div>
-                    <button class="btn-buy"><i class="fas fa-cart-plus"></i> ADD TO CART</button>
-                    <div class="card-extras">
-                        <button class="btn-wishlist"><i class="fas fa-heart"></i> Wishlist</button>
-                        <div class="stock-bar"><div class="stock-label"><span>Stock</span><span>9/10</span></div><div class="stock-track"><div class="stock-fill" style="width: 90%; background: #22c55e;"></div></div></div>
-                        <div class="reviews"><span class="stars">★★★★☆</span><span class="review-count">(63 reseñas)</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <span class="card-search"><i class="fas fa-search"></i></span>
-                <img src="../images/tienda/Arceus_VSTAR.avif" alt="Arceus VSTAR">
-                <div class="card-info">
-                    <span class="card-badge">Gold Secret</span>
-                    <h4>Arceus VSTAR Gold</h4>
-                    <p>Versión dorada del Dios Pokémon perteneciente a la exclusiva galería de Zenit Regio.</p>
-                    <div class="price-row"><span class="price">$110</span></div>
-                    <button class="btn-buy"><i class="fas fa-cart-plus"></i> ADD TO CART</button>
-                    <div class="card-extras">
-                        <button class="btn-wishlist"><i class="fas fa-heart"></i> Wishlist</button>
-                        <div class="stock-bar"><div class="stock-label"><span>Stock</span><span>6/10</span></div><div class="stock-track"><div class="stock-fill" style="width: 60%; background: #22c55e;"></div></div></div>
-                        <div class="reviews"><span class="stars">★★★★★</span><span class="review-count">(98 reseñas)</span></div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <div class="card">
+          <span class="card-search"><i class="fas fa-search"></i></span>
+          <img src="../images/main/Umbreon_Vmax_Alt.jpg" alt="Moonbreon" />
+          <div class="card-info">
+            <span class="card-badge">Alt Art</span>
+            <h4>Umbreon VMAX Alt Art</h4>
+            <p>La joya de Cielos Evolutivos. Arte alternativo nocturno.</p>
+            <div class="price-row"><span class="price">$850</span></div>
+            <button class="btn-buy">
+              <i class="fas fa-cart-plus"></i> ADD TO CART
+            </button>
+            <div class="card-extras">
+              <button class="btn-wishlist">
+                <i class="fas fa-heart"></i> Wishlist
+              </button>
+              <div class="stock-bar">
+                <div class="stock-label">
+                  <span>Stock</span><span>4/10</span>
+                </div>
+                <div class="stock-track">
+                  <div
+                    class="stock-fill"
+                    style="width: 40%; background: #f59e0b"></div>
+                </div>
+              </div>
+              <div class="reviews">
+                <span class="stars">★★★★★</span
+                ><span class="review-count">(289 reseñas)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-search"><i class="fas fa-search"></i></span>
+          <img
+            src="../images/main/Charizard_(Base_Set_TCG).png"
+            alt="Charizard" />
+          <div class="card-info">
+            <span class="card-badge">1st Edition</span>
+            <h4>Charizard 1st Edition</h4>
+            <p>Set Base Shadowless. El icono absoluto de 1999.</p>
+            <div class="price-row"><span class="price">$350,000</span></div>
+            <button class="btn-buy">
+              <i class="fas fa-cart-plus"></i> ADD TO CART
+            </button>
+            <div class="card-extras">
+              <button class="btn-wishlist">
+                <i class="fas fa-heart"></i> Wishlist
+              </button>
+              <div class="stock-bar">
+                <div class="stock-label">
+                  <span>Stock</span><span>2/5</span>
+                </div>
+                <div class="stock-track">
+                  <div
+                    class="stock-fill"
+                    style="width: 40%; background: #f59e0b"></div>
+                </div>
+              </div>
+              <div class="reviews">
+                <span class="stars">★★★★★</span
+                ><span class="review-count">(1.2k reseñas)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-search"><i class="fas fa-search"></i></span>
+          <img src="../images/main/Pikachu_Culon.jpg" alt="Pikachu EX" />
+          <div class="card-info">
+            <span class="card-badge">Special EX</span>
+            <h4>Pikachu EX Special</h4>
+            <p>Edición especial con arte expandido y gran detalle.</p>
+            <div class="price-row"><span class="price">$450</span></div>
+            <button class="btn-buy">
+              <i class="fas fa-cart-plus"></i> ADD TO CART
+            </button>
+            <div class="card-extras">
+              <button class="btn-wishlist">
+                <i class="fas fa-heart"></i> Wishlist
+              </button>
+              <div class="stock-bar">
+                <div class="stock-label">
+                  <span>Stock</span><span>8/10</span>
+                </div>
+                <div class="stock-track">
+                  <div
+                    class="stock-fill"
+                    style="width: 80%; background: #22c55e"></div>
+                </div>
+              </div>
+              <div class="reviews">
+                <span class="stars">★★★★☆</span
+                ><span class="review-count">(87 reseñas)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-search"><i class="fas fa-search"></i></span>
+          <img
+            src="../images/tienda/Gardevoir SH_EX.jpg"
+            alt="Gardevoir SH_EX" />
+          <div class="card-info">
+            <span class="card-badge">Shiny EX</span>
+            <h4>Gardevoir Shiny EX</h4>
+            <p>
+              Edición especial variocolor con arte radiante y bordes plateados
+              de la era moderna.
+            </p>
+            <div class="price-row"><span class="price">$150</span></div>
+            <button class="btn-buy">
+              <i class="fas fa-cart-plus"></i> ADD TO CART
+            </button>
+            <div class="card-extras">
+              <button class="btn-wishlist">
+                <i class="fas fa-heart"></i> Wishlist
+              </button>
+              <div class="stock-bar">
+                <div class="stock-label">
+                  <span>Stock</span><span>7/10</span>
+                </div>
+                <div class="stock-track">
+                  <div
+                    class="stock-fill"
+                    style="width: 70%; background: #22c55e"></div>
+                </div>
+              </div>
+              <div class="reviews">
+                <span class="stars">★★★★★</span
+                ><span class="review-count">(154 reseñas)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-search"><i class="fas fa-search"></i></span>
+          <img
+            src="../images/tienda/Latios&Latias_EX.png"
+            alt="Latios & Latias EX" />
+          <div class="card-info">
+            <span class="card-badge">GX Alt Art</span>
+            <h4>Latios & Latias GX Alt Art</h4>
+            <p>
+              El icónico diseño en forma de corazón, una de las piezas más
+              buscadas de Sol y Luna.
+            </p>
+            <div class="price-row"><span class="price">$1,200</span></div>
+            <button class="btn-buy">
+              <i class="fas fa-cart-plus"></i> ADD TO CART
+            </button>
+            <div class="card-extras">
+              <button class="btn-wishlist">
+                <i class="fas fa-heart"></i> Wishlist
+              </button>
+              <div class="stock-bar">
+                <div class="stock-label">
+                  <span>Stock</span><span>3/10</span>
+                </div>
+                <div class="stock-track">
+                  <div
+                    class="stock-fill"
+                    style="width: 30%; background: #ef4444"></div>
+                </div>
+              </div>
+              <div class="reviews">
+                <span class="stars">★★★★★</span
+                ><span class="review-count">(201 reseñas)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-search"><i class="fas fa-search"></i></span>
+          <img src="../images/tienda/Salamance_VMAX.png" alt="Salamance VMAX" />
+          <div class="card-info">
+            <span class="card-badge">Rainbow Rare</span>
+            <h4>Salamence VMAX Rainbow</h4>
+            <p>
+              Rareza secreta con acabado arcoíris que muestra al dragón de Hoenn
+              en su máximo esplendor.
+            </p>
+            <div class="price-row"><span class="price">$85</span></div>
+            <button class="btn-buy">
+              <i class="fas fa-cart-plus"></i> ADD TO CART
+            </button>
+            <div class="card-extras">
+              <button class="btn-wishlist">
+                <i class="fas fa-heart"></i> Wishlist
+              </button>
+              <div class="stock-bar">
+                <div class="stock-label">
+                  <span>Stock</span><span>9/10</span>
+                </div>
+                <div class="stock-track">
+                  <div
+                    class="stock-fill"
+                    style="width: 90%; background: #22c55e"></div>
+                </div>
+              </div>
+              <div class="reviews">
+                <span class="stars">★★★★☆</span
+                ><span class="review-count">(63 reseñas)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-search"><i class="fas fa-search"></i></span>
+          <img src="../images/tienda/Arceus_VSTAR.avif" alt="Arceus VSTAR" />
+          <div class="card-info">
+            <span class="card-badge">Gold Secret</span>
+            <h4>Arceus VSTAR Gold</h4>
+            <p>
+              Versión dorada del Dios Pokémon perteneciente a la exclusiva
+              galería de Zenit Regio.
+            </p>
+            <div class="price-row"><span class="price">$110</span></div>
+            <button class="btn-buy">
+              <i class="fas fa-cart-plus"></i> ADD TO CART
+            </button>
+            <div class="card-extras">
+              <button class="btn-wishlist">
+                <i class="fas fa-heart"></i> Wishlist
+              </button>
+              <div class="stock-bar">
+                <div class="stock-label">
+                  <span>Stock</span><span>6/10</span>
+                </div>
+                <div class="stock-track">
+                  <div
+                    class="stock-fill"
+                    style="width: 60%; background: #22c55e"></div>
+                </div>
+              </div>
+              <div class="reviews">
+                <span class="stars">★★★★★</span
+                ><span class="review-count">(98 reseñas)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>Compañía</h3>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="#">Nuestros servicios</a>
-                <a href="../pdf/condiciones.pdf">Política Privacidad</a>
-                <a href="#">Afíliate</a>
-            </div>
-            <div class="footer-col">
-                <h3>Ayuda</h3>
-                <a href="#">Preguntas</a>
-                <a href="#">Compras</a>
-                <a href="#">Envíos</a>
-            </div>
-            <div class="footer-col">
-                <h3>Tienda</h3>
-                <a href="tienda.html"><i class="fa-solid fa-star"></i> Cartas Legendarias</a>
-                <a href="#"><i class="fa-solid fa-box-open"></i> Sobres y Boosters</a>
-                <a href="#"><i class="fa-solid fa-layer-group"></i> Decks de Combate</a>
-                <a href="#"><i class="fa-solid fa-shield"></i> Protectores y Fundas</a>
-                <a href="#"><i class="fa-solid fa-gem"></i> Cartas Graduadas (PSA)</a>
-                <a href="#"><i class="fa-solid fa-scroll"></i> Accesorios y Tapetes</a>
-            </div>
-            <div class="footer-col">
-                <h3>Síguenos</h3>
-                <div class="socials">
-                    <span class="icon"><i class="fa-brands fa-facebook"></i></span>
-                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
-                    <span class="icon"><i class="fa-brands fa-twitter"></i></span>
-                    <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
-                </div>
-            </div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Compañía</h3>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="#">Nuestros servicios</a>
+          <a href="../pdf/condiciones.pdf">Política Privacidad</a>
+          <a href="#">Afíliate</a>
         </div>
+        <div class="footer-col">
+          <h3>Ayuda</h3>
+          <a href="#">Preguntas</a>
+          <a href="#">Compras</a>
+          <a href="#">Envíos</a>
+        </div>
+        <div class="footer-col">
+          <h3>Tienda</h3>
+          <a href="tienda.html"
+            ><i class="fa-solid fa-star"></i> Cartas Legendarias</a
+          >
+          <a href="#"><i class="fa-solid fa-box-open"></i> Sobres y Boosters</a>
+          <a href="#"
+            ><i class="fa-solid fa-layer-group"></i> Decks de Combate</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-shield"></i> Protectores y Fundas</a
+          >
+          <a href="#"><i class="fa-solid fa-gem"></i> Cartas Graduadas (PSA)</a>
+          <a href="#"
+            ><i class="fa-solid fa-scroll"></i> Accesorios y Tapetes</a
+          >
+        </div>
+        <div class="footer-col">
+          <h3>Síguenos</h3>
+          <div class="socials">
+            <span class="icon"><i class="fa-brands fa-facebook"></i></span>
+            <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+            <span class="icon"><i class="fa-brands fa-twitter"></i></span>
+            <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
