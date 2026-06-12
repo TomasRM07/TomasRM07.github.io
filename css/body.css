@@ -7,3 +7,59 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
 }
+
+@media (max-width: 900px) {
+    .container,
+    .content,
+    .wrapper {
+        width: 95%;
+        padding: 0 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.3rem; }
+
+    .grid,
+    .cards,
+    .productos,
+    .equipo {
+        grid-template-columns: 1fr !important;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    section,
+    main,
+    article {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    button,
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 { font-size: 1.7rem; }
+    h2 { font-size: 1.4rem; }
+    body { font-size: 13px; }
+}
